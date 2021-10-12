@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nav_bar_items",
+  "info": {
+    "name": "navBarItem",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "nav_bar_items": {
+      "collection": "nav-bar-item",
+      "via": "nav_bar_item"
+    },
+    "nav_bar_item": {
+      "model": "nav-bar-item",
+      "via": "nav_bar_items"
+    },
+    "isInNavBar": {
+      "type": "boolean"
+    },
+    "path": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}
