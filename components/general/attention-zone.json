@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_general_attention_zones",
+  "info": {
+    "name": "AttentionZone",
+    "icon": "joint"
+  },
+  "options": {},
+  "attributes": {
+    "Header": {
+      "type": "string",
+      "required": true
+    },
+    "SubHeader": {
+      "type": "string"
+    }
+  }
+}

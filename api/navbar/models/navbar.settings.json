@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "navbars",
+  "info": {
+    "name": "Navbar",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SiteName": {
+      "type": "string"
+    },
+    "TopLevelNavItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "general.nav-item"
+    }
+  }
+}

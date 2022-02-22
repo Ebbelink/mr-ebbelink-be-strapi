@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_general_nav_items",
+  "info": {
+    "name": "NavItem",
+    "icon": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nav_bar_item": {
+      "model": "nav-bar-item"
+    }
+  }
+}
