@@ -4,7 +4,7 @@ WORKDIR /src
 ADD . .
 
 RUN yarn install
-RUN yarn build:production
+RUN yarn build --prod
 
 FROM base as RUN
 
