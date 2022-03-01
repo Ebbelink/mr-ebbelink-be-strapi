@@ -5,17 +5,18 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Boot STRAPI",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "yarn start dev",
+      "preLaunchTask": "build strapi"
+    },
+    {
       "name": "Open STRAPI",
       "request": "launch",
       "type": "node-terminal",
       "command": "start http://localhost:1337/admin",
       "preLaunchTask": "Wait for STRAPI"
-    },
-    {
-      "name": "Boot STRAPI",
-      "type": "node-terminal",
-      "request": "launch",
-      "command": "yarn start dev",
     }
   ],
   "compounds": [

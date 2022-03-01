@@ -12,6 +12,21 @@
         "reveal": "silent",
         "panel": "new"
       }
+    },
+    {
+      "label": "build strapi",
+      "type": "shell",
+      "windows": {
+        "command": "npm run build:win:development"
+      },
+      "linux":{
+        "command": "NODE_ENV=development yarn build"
+      },
+      "group": "none",
+      "presentation": {
+        "reveal": "silent",
+        "panel": "new"
+      }
     }
-  ]
+  ] 
 }
