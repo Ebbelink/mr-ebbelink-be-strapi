@@ -3,10 +3,8 @@ FROM node:12 as base
 WORKDIR /src
 ADD . .
 
-RUN NODE_ENV=production
-
 RUN yarn install
-RUN yarn build
+RUN NODE_ENV=production yarn build
 
 FROM base as RUN
 
